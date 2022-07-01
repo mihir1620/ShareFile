@@ -11,7 +11,9 @@ const uploadFile = multer({dest : 'sharedFile'});
 
 const connectDB = async() => {
   try{
-      const conn = await mongoose.connect(process.env.DATABASE_URL);
+      const conn = await mongoose.connect(process.env.DATABASE_URL, {
+        
+      });
       console.log(`MongoDB connected on ${conn.connection.host}`);
   }
   catch(error)
