@@ -10,6 +10,9 @@
     <title>ShareFile</title>
 </head>
 <body>
+  <h2 class="text-center m-2">
+    Share your files 
+  </h2>
     <% if (locals.fileLink != null) { %>
       <div class="text-center m-5">
         <div class="alert alert-success m-auto" role="alert" style="max-width: 600px;">
@@ -22,13 +25,13 @@
         <form action="/upload" method="post"  enctype="multipart/form-data">
           <div class="row justify-content-center">
             <div class="form-group mb-2 col-lg-8">
-              <label for="file" class="form-label">File</label>
+              <label for="file" class="form-label">File: </label>
               <input type="file" name="file" id="file" required class="form-control">
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="form-group mb-2 col-lg-8">
-              <label for="password" class="form-label">Passowrd</label>
+              <label for="password" class="form-label">Passowrd: </label>
               <input type="password" name="password" id="password" class="form-control">
             </div>
           </div>
